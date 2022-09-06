@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    border-top: 3px solid #f48225;
+    border-bottom: 1px solid #c2c7cb;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    font-size: 13px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.20rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.header-user img{
+    width: 1.25rem;
+}
+.btn{
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 15px;
+}
+.btn:hover{
+    background: #d5d5d5;
+}
+.mr-0{
+    margin-right: 0px;
+}
+nav div.b-hov:hover{
+    background-color: #d5d5d5;
+}
+nav div{
+    padding: 2px;
+}
+.side-bar{
+    width: 200px;
+}
+li{
+    list-style: none;
+    font-size: 13px;
+    padding: 3px 10px;
+    color: #8F9091;
+}
+#icon-star{
+    width:18px;
+}
+#icon-info{
+    width: 18px;
+    opacity: .5;
+}
+#earth-icon{
+    font-size: 18px;
+    vertical-align: sub;
+}
+.ms-4 {
+    margin-left: 1.9rem!important;
+}
+#earth-icon:hover{
+    color: #525960;
+}
