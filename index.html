@@ -1,683 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Jon Skeet - Stack Overflow</title>
-    <link rel = "icon" href = "images/footerstack.JPG" type = "image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <nav class="navbar  navbar-expand-lg navbar-light bg-light fit-content px-sm-1 px-md-3 px-lg-4 px-xl-4 py-0 fixed-top">
-      <div class="container-fluid d-flex">
-        <!--<div class="d-md-none d-lg-none">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>-->
-        <div class="b-hov">
-            <a class="navbar-brand  pt-0 mr-0 collapse navbar-collapse" href="#"><img src="images/logo-stackoverflow.png" alt=""></a>
-            <a class="navbar-toggler" data-bs-toggle="collapse" href="#"><img src="images/stackoverflow-color.png" alt=""></a>
-          </div>
-          <div>
-            <button class="btn">Products</button>
-          </div>
-          <div class="form-group has-search col-lg-7 col-md-5 col-sm-2 col-1">
-            <span class="fa fa-search form-control-feedback lh-sm-1"></span>
-            <input type="text" class="form-control input-sm "  value="user:22656" >
-          </div>
-          <div class="header-user b-hov">
-            <img src="images/user-icon.png" alt="">
-            <span title="1 bronze badge" aria-hidden="true">
-                <span class="badgecount1">1</span>
-                <span class="badge3">●</span>
-                <span class="badgecount">1</span>
-            </span>
-        </div>
-        <div class="header-user b-hov">
-          <img src="images/inbox.png" alt="">
-        </div>
-        <div class="header-user b-hov">
-          <img src="images/trophy.png" alt="">
-        </div>
-        <div class="header-user b-hov">
-          <img src="images/help-web-button.png" alt="">
-        </div>
-        <div class="header-user b-hov">
-          <img src="images/stack-exchange-logo.png" alt="">
-        </div>       
-        </div>
-    </nav>
-    <div class="container-fluid d-flex mt-5">
-      <div class="side-bar d-none d-sm-none  d-md-block col-md-2 pt-4">
-        <ol class="sb1">    
-            <li class="">Home</li>
-            <li class="">PUBLIC</li>
-        </ol>
-        <li class="ms-4"><span id="earth-icon" class="material-symbols-outlined">public</span> Questions</li>
-         <div class="sub-sb1">
-            <ol class="ml20">
-                <li>Tags</li>
-                <li id="user">Users</li>
-                <li>Companies</li>
-            </ol>
-        </div>
-        <div class="sb2">
-            <ol>
-                <li>COLLECTIVES<img class="pull-right icon-info" src="images/icons8-info-30.png" alt=""></li>
-                <li><img id="icon-star" src="images/star.png" alt=""><span class="pull-right">Exoplore Collectives</span></li>
-            </ol>
-        </div>
-        <div class="sb3">
-            <ol>
-                <li>TEAMS<img class="pull-right icon-info" src="images/icons8-info-30.png" alt=""></li>
-                <li><img id="icon-star" src="images/icons8-shopping-bag-24.png" alt=""><span class="pull-right">create free team</span></li>
-            </ol>
-        </div>
-      </div>
-      <div class="main-content col-md-10 ">
-        <div class="mc-1 m-sm-0 m-md-4 d-flex justify-content-between">
-            <div class="d-md-flex d-sm-block">
-              <div class="pro-image">
-                <img src="images/pro-icon.jpeg" alt="">
-              </div>
-              <div class="image-content ms-3">
-                <p> Jon Skeet</p>
-                <div class="ic-1">
-                    <span class="material-symbols-outlined">cake</span>
-                    <span>Member for 13 years, 9 months</span>
-                    <span class="material-symbols-outlined">query_builder</span>
-                    <span>Last seen this week</span>
-                </div>
-                <div class="ic-2 pt-2">
-                    <img src="images/icons8-twitter-20.png" alt="">
-                    <img src="images/icons8-github-20.png" alt="">
-                    <img src="images/icons8-link-50.png" alt="">
-                    <a href="csharpindepth.com">csharpindepth.com</a>
-                    <img src="images/icons8-location-20.png" alt="">
-                    <span>Reading, United Kingdom</span>
-                </div>  
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User Jon Skeet - Stack Overflow</title>
+      <link rel = "icon" href = "images/footerstack.JPG" type = "image/x-icon">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar  navbar-expand-lg navbar-light bg-light fit-content px-sm-1 px-md-3 px-lg-4 px-xl-4 py-0 fixed-top">
+         <div class="container-fluid d-flex">
+            <!--<div class="d-md-none d-lg-none">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               </div>-->
+            <div class="b-hov">
+               <a class="navbar-brand  pt-0 mr-0 collapse navbar-collapse" href="#"><img src="images/logo-stackoverflow.png" alt=""></a>
+               <a class="navbar-toggler" data-bs-toggle="collapse" href="#"><img src="images/stackoverflow-color.png" alt=""></a>
             </div>
+            <div>
+               <button class="btn">Products</button>
             </div>
-            <div class="button-icon">
-                <button type="button" >
-                    <span class="buttonPro">Profiles</span>
-                    <span id="expand-icon" class="material-symbols-outlined">arrow_drop_down</span>
+            <div class="form-group has-search col-lg-7 col-md-5 col-sm-2 col-1">
+               <span class="fa fa-search form-control-feedback lh-sm-1"></span>
+               <input type="text" class="form-control input-sm "  value="user:22656" >
+            </div>
+            <div class="header-user b-hov">
+               <img src="images/user-icon.png" alt="">
+               <span title="1 bronze badge" aria-hidden="true">
+               <span class="badgecount1">1</span>
+               <span class="badge3">●</span>
+               <span class="badgecount">1</span>
+               </span>
+            </div>
+            <div class="header-user b-hov">
+               <img src="images/inbox.png" alt="">
+            </div>
+            <div class="header-user b-hov">
+               <img src="images/trophy.png" alt="">
+            </div>
+            <div class="header-user b-hov">
+               <img src="images/help-web-button.png" alt="">
+            </div>
+            <div class="header-user b-hov">
+               <img src="images/stack-exchange-logo.png" alt="">
+            </div>
+         </div>
+      </nav>
+      <div class="container-fluid d-flex mt-5">
+         <div class="side-bar dec d-none d-sm-none  d-md-block col-md-2 pt-4">
+            <ol class="sb1 dec">
+               <li class="">Home</li>
+               <li class="">PUBLIC</li>
+            </ol>
+            <li class="ms-4 dec"><span id="earth-icon" class="material-symbols-outlined">public</span> Questions</li>
+            <div class="sub-sb1 dec">
+               <ol class="ml20">
+                  <li>Tags</li>
+                  <li id="user">Users</li>
+                  <li>Companies</li>
+               </ol>
+            </div>
+            <div class="sb2 dec">
+               <ol>
+                  <li>COLLECTIVES<img class="pull-right icon-info" src="images/icons8-info-30.png" alt=""></li>
+                  <li><img id="icon-star" src="images/star.png" alt=""><span class="pull-right">Exoplore Collectives</span></li>
+               </ol>
+            </div>
+            <div class="sb3 dec">
+               <ol>
+                  <li>TEAMS<img class="pull-right icon-info" src="images/icons8-info-30.png" alt=""></li>
+                  <li><img id="icon-star" src="images/icons8-shopping-bag-24.png" alt=""><span class="pull-right">create free team</span></li>
+               </ol>
+            </div>
+         </div>
+         <div class="main-content col-md-10 ">
+            <div class="mc-1 mt-4 mt-sm-4 mt-md-4 d-flex justify-content-between">
+               <div class="d-md-flex d-sm-block">
+                  <div class="pro-image">
+                     <img src="images/pro-icon.jpeg" alt="">
+                  </div>
+                  <div class="image-content ms-3">
+                     <p> Jon Skeet</p>
+                     <div class="ic-1">
+                        <span class="material-symbols-outlined">cake</span>
+                        <span>Member for 13 years, 9 months</span>
+                        <span class="material-symbols-outlined">query_builder</span>
+                        <span>Last seen this week</span>
+                     </div>
+                     <div class="ic-2 pt-2">
+                        <img src="images/icons8-twitter-20.png" alt="">
+                        <img src="images/icons8-github-20.png" alt="">
+                        <img src="images/icons8-link-50.png" alt="">
+                        <a href="csharpindepth.com">csharpindepth.com</a>
+                        <img src="images/icons8-location-20.png" alt="">
+                        <span>Reading, United Kingdom</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="button-icon mx-4">
+                  <button type="button" >
+                  <span class="buttonPro">Profiles</span>
+                  <span id="expand-icon" class="material-symbols-outlined">arrow_drop_down</span>
                   </button>
+               </div>
             </div>
-        </div>
-        <div class="mc-2 d-flex">
-          <div class="profile">
-              <button class="btn-1">Profile</button>
-          </div>
-          <div class="activity-btn">
-              <button class="btn-2">Activity</button>
-          </div>
-      </div>
-        <div class="mc-3  m-4 d-flex">
-          <div class="stats-bar col-3">
-              <div class="stats-title">
-                  <span>Stats</span>
-              </div>
-              <div class="status-content ">
-                  <div class="content-row justify-content-between">
-                      <div class="reputation">
-                          <span id="title">1,338,759</span>
-                          <span id="discription">reputation</span>
-                      </div>
-                      <div class="reached">
-                          <span id="title">362.0m</span>
-                          <span id="discription">reached</span>
-                      </div>
-                  </div>
-                  <div class="content-row justify-content-between">
-                      <div class="answers">
-                          <span id="title">35,451</span>
-                          <span id="discription">answers</span>
-                      </div>
-                      <div class="questions">
-                          <span id="title">51</span>
-                          <span id="discription">questions</span>
-                      </div>
-                  </div>
-                  <div class="content-full justify-content-between">
-                      <div class="achievements">
-                          <img src="images/trophy.png" alt="">
-                          <span id="discription">top 0.01% overall</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="Collectives">
-                  <div class="collectives-title">
-                      <span>Collectives</span>
-                  </div>
-                  <div class="collectives-content">
-                      <div class="collective-image">
-                          <img src="images/cloud.JPG" alt="">
-                      </div>
-                      <div class="collective-info">
-                          <span>Google Cloud</span>
-                          <span id="collective-emp">2021 • Employee</span>
-                      </div>
-                  </div>
-              </div>
-              <div class="Communities">
-                  <div class="communities-title">
-                      <span>Communities</span>
-                      <span id="icon-view"> View all</span>
-                      <span id="mi-view" class="material-symbols-outlined">open_in_new</span>
-                  </div>
-                  <div class="communities-content">
-                              <div class="stack">
-                                  <img src="images/stackoverflow-color.png" alt="">
-                                  <a href="#">Stack Overflow </a>
-                                  <span>1.3m</span>
-                              </div>
-                              <div class="exchange">
-                                  <img src="images/blue-chat-icon.jpeg" alt="">
-                                  <a href="#">Meta Stack Exchange</a>
-                                  <span>92.7k</span>
-                              </div>
-                              <div class="super-user">
-                                  <img src="images/su-icon.png" alt="">
-                                  <a href="#">Super User</a>
-                                  <span>5.1k</span>
-                              </div>
-                              <div class="server-fault">
-                                  <img src="images/icons8-server-fault.png" alt="">
-                                  <a href="#">Server Fault</a>
-                                  <span>4.7k</span>
-                              </div>
-                              <div class="engineering">
-                                  <img src="images/icons8-travel-mug-64.png" alt="">
-                                  <a href="#">Software Engineering</a>
-                                  <span>3.4k</span>
-                              </div>
-                  </div>
-              </div>
-          </div>
-          <div class="about-bar">
-            <div class="about-title">
-                <span>About</span>
+            <div class="mc-2 ps-4 p-2 pt-sm-2 pt-md-2 d-flex">
+               <div class="profile">
+                  <button class="btn-1">Profile</button>
+               </div>
+               <div class="activity-btn">
+                  <button class="btn-2">Activity</button>
+               </div>
             </div>
-            <div class="discription">
-                <span>Author of <a href="#"> C# in Depth.</a></span>
-                <p>Currently a software engineer at Google, London.</p>
-                <p>Usually a Microsoft MVP (C#, 2003-2010, 2011-)</p>
-            </div>
-            <div class="sites-list">
-                <span>Sites:</span>
-                <div class="list">
-                    <ul>
-                        <li><a href="#">C# in Depth</a></li>
-                        <li><a href="#">Coding blog</a></li>
-                        <li><a href="#">C# articles</a></li>
-                        <li><a href="#">Twitter updates (@jonskeet)</a></li>
-                    </ul>
-                </div>
-                <span>Email: skeet@pobox.com (but please read <a href="#">my blog post on Stack Overflow-related emails </a> first)</span>
-            </div>
-            <div class="cm2">
-                <div class="cm2-title">
-                    <span>Badges</span>
-                    <a href="#">View all badges</a>
-                </div>
-                <div class="cc row">
-                    <div class="cc-title col-sm">
-                        <div class="cc-title2">
-                            <img src="images/gold-icon (1).jpeg" alt="">
-                            <div class="img-content">
-                                <span>824</span>
-                                <p>gold badges</p>
-                            </div>
+            <div class="mc-3 mx-4 d-block d-sm-block d-md-block d-lg-flex">
+               <div class="stats-bar col-md-5 col-lg-3">
+                  <div class="stats-title">
+                     <span>Stats</span>
+                  </div>
+                  <div class="status-content d-inline-flex d-sm-inline-flex d-md-block">
+                     <div class="content-row justify-content-between">
+                        <div class="reputation">
+                           <span id="title">1,338,759</span>
+                           <span id="discription">reputation</span>
                         </div>
-                        <div class="cc-content">
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                        <div class="reached">
+                           <span id="title">362.0m</span>
+                           <span id="discription">reached</span>
+                        </div>
+                     </div>
+                     <div class="content-row justify-content-between">
+                        <div class="answers">
+                           <span id="title">35,451</span>
+                           <span id="discription">answers</span>
+                        </div>
+                        <div class="questions">
+                           <span id="title">51</span>
+                           <span id="discription">questions</span>
+                        </div>
+                     </div>
+                     <div class="content-full justify-content-between">
+                        <div class="achievements">
+                           <img src="images/trophy.png" alt="">
+                           <span id="discription">top 0.01% overall</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Collectives">
+                     <div class="collectives-title">
+                        <span>Collectives</span>
+                     </div>
+                     <div class="collectives-content">
+                        <div class="collective-image">
+                           <img src="images/cloud.JPG" alt="">
+                        </div>
+                        <div class="collective-info pt-0">
+                           <span>Google Cloud</span>
+                           <span id="collective-emp">2021 • Employee</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="Communities">
+                     <div class="communities-title">
+                        <span>Communities</span>
+                        <span id="icon-view"> View all</span>
+                        <span id="mi-view" class="material-symbols-outlined">open_in_new</span>
+                     </div>
+                     <div class="communities-content">
+                        <div class="stack d-flex justify-content-between">
+                           <div>
+                              <img src="images/stackoverflow-color.png" alt="">
+                              <a href="#">Stack Overflow </a>
+                           </div>
+                           <div>
+                              <span>1.3m</span>
+                           </div>
+                        </div>
+                        <div class="exchange d-flex justify-content-between">
+                           <div>
+                              <img src="images/blue-chat-icon.jpeg" alt="">
+                              <a href="#">Meta Stack Exchange</a>
+                           </div>
+                           <div>
+                              <span>92.7k</span>
+                           </div>
+                        </div>
+                        <div class="super-user d-flex justify-content-between">
+                           <div>
+                              <img src="images/su-icon.png" alt="">
+                              <a href="#">Super User</a>
+                           </div>
+                           <div>
+                              <span>5.1k</span>
+                           </div>
+                        </div>
+                        <div class="server-fault d-flex justify-content-between">
+                           <div>
+                              <img src="images/icons8-server-fault.png" alt="">
+                              <a href="#">Server Fault</a>
+                           </div>
+                           <div>
+                              <span>4.7k</span>
+                           </div>
+                        </div>
+                        <div class="engineering d-flex justify-content-between">
+                           <div>
+                              <img src="images/icons8-travel-mug-64.png" alt="">
+                              <a href="#">Software Engineering</a>
+                           </div>
+                           <div>
+                              <span>3.4k</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="about-bar">
+                  <div class="about-title">
+                     <span>About</span>
+                  </div>
+                  <div class="discription">
+                     <span>Author of <a href="#"> C# in Depth.</a></span>
+                     <p>Currently a software engineer at Google, London.</p>
+                     <p>Usually a Microsoft MVP (C#, 2003-2010, 2011-)</p>
+                  </div>
+                  <div class="sites-list">
+                     <span>Sites:</span>
+                     <div class="list">
+                        <ul>
+                           <li><a href="#">C# in Depth</a></li>
+                           <li><a href="#">Coding blog</a></li>
+                           <li><a href="#">C# articles</a></li>
+                           <li><a href="#">Twitter updates (@jonskeet)</a></li>
+                        </ul>
+                     </div>
+                     <span>Email: skeet@pobox.com (but please read <a href="#">my blog post on Stack Overflow-related emails </a> first)</span>
+                  </div>
+                  <div class="cm2">
+                     <div class="cm2-title">
+                        <span>Badges</span>
+                        <a href="#">View all badges</a>
+                     </div>
+                     <div class="cc row">
+                        <div class="cc-title col-sm">
+                           <div class="cc-title2">
+                              <img src="images/gold-icon (1).jpeg" alt="">
+                              <div class="img-content">
+                                 <span>824</span>
+                                 <p>gold badges</p>
+                              </div>
+                           </div>
+                           <div class="cc-content">
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-g">●</span>
                                     <span>extension-methods</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span> Jul 6, 2019</span>
-                                </div>
-                            </div>
-                                <div class="cc-c1">
-                                    <div class="cc-c2">
-                                        <span class="dot-icon-g">●</span> 
-                                        <span>properties</span> 
-                                    </div>
-                                    <div class="cc-c3">
-                                        <span>Jun 6, 2020</span>
-                                    </div>
-                                </div>
-                                <div class="cc-c1">
-                                    <div class="cc-c2">
-                                        <span class="dot-icon-g">●</span>
-                                        <span>events</span> 
-                                    </div>
-                                    <div class="cc-c3">
-                                        <span>Jan 22, 2013</span>
-                                    </div>
-                                </div>  
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
+                                    <span class="dot-icon-g">●</span> 
+                                    <span>properties</span> 
+                                 </div>
+                                 <div class="cc-c3">
+                                    <span>Jun 6, 2020</span>
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
+                                    <span class="dot-icon-g">●</span>
+                                    <span>events</span> 
+                                 </div>
+                                 <div class="cc-c3">
+                                    <span>Jan 22, 2013</span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="cc-title col-sm">
-                        <div class="cc-title2">
-                            <img src="images/silver-icon.jpeg" alt="">
-                            <div class="img-content">
-                                <span>8,939</span>
-                                <p>silver badges</p>
-                            </div>
-                        </div>
-                        <div class="cc-content">
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                        <div class="cc-title col-sm">
+                           <div class="cc-title2">
+                              <img src="images/silver-icon.jpeg" alt="">
+                              <div class="img-content">
+                                 <span>8,939</span>
+                                 <p>silver badges</p>
+                              </div>
+                           </div>
+                           <div class="cc-content">
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-s">●</span>
                                     <span>overloading</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span> Feb 10, 2019</span>
-                                </div>
-                            </div> 
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-s">●</span> 
                                     <span>overriding</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span>Jun 19, 2019</span>
-                                </div>
-                            </div>
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-s">●</span>
                                     <span>expression</span> 
-                                </div>
-                                <div class="cc-c3">
-                                     <span>Mar 12, 2020</span>
                                  </div>
-                            </div>
+                                 <div class="cc-c3">
+                                    <span>Mar 12, 2020</span>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="cc-title col-sm">
-                        <div class="cc-title2">
-                            <img src="images/bronze-icon.jpeg" alt="">
-                            <div class="img-content">
-                                <span>9,060</span>
-                                <p>bronze badges</p>
-                            </div>
-                        </div>
-                        <div class="cc-content">
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                        <div class="cc-title col-sm">
+                           <div class="cc-title2">
+                              <img src="images/bronze-icon.jpeg" alt="">
+                              <div class="img-content">
+                                 <span>9,060</span>
+                                 <p>bronze badges</p>
+                              </div>
+                           </div>
+                           <div class="cc-content">
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-b">●</span>
                                     <span>superclass</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span>Jul 23, 2014</span>
-                                </div>
-                            </div>
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-b">●</span> 
                                     <span>xmlreader</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span>Aug 2, 2014</span>
-                                </div>
-                            </div>
-                            <div class="cc-c1">
-                                <div class="cc-c2">
+                                 </div>
+                              </div>
+                              <div class="cc-c1">
+                                 <div class="cc-c2">
                                     <span class="dot-icon-b">●</span>
                                     <span>indexout</span> 
-                                </div>
-                                <div class="cc-c3">
+                                 </div>
+                                 <div class="cc-c3">
                                     <span>Mar 30, 2014</span>
-                                </div>
-                            </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    
-                </div>
-                <!--cc end-->
-            </div>
-            <div class="tag-bar">
-                <div class="tag-title">
-                    <span>Top tags</span>
-                    <a href="#">View all tags</a>
-                </div>
-                <div class="table-bars">
-                    <div class="tag-rows">
-                        <a href="#">c#</a>
-                        <span class="dot-icon">●</span>
-                        <div class="top-data">
-                            <span id="h1">254,931</span>
-                            <span id="h2">score</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">19,804</span>
-                            <span id="h2">posts</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">56</span>
-                            <span id="h2">posts %</span> 
-                        </div>
-                    </div>
-                    <div class="tag-rows">
-                        <a href="#">java</a>
-                        <span class="dot-icon">●</span>
-                        <div class="top-data">
-                            <span id="h1">153,792</span>
-                            <span id="h2">score</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">10,565</span>
-                            <span id="h2">posts</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">30</span>
-                            <span id="h2">posts %</span> 
-                        </div>
-                    </div>
-                    <div class="tag-rows">
-                        <a href="#">.net</a>
-                        <span class="dot-icon">●</span>
-                        <div class="top-data">
-                            <span id="h1">88,372</span>
-                            <span id="h2">score</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">5,606</span>
-                            <span id="h2">posts</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">16</span>
-                            <span id="h2">posts %</span> 
-                        </div>
-                    </div>
-                    <div class="tag-rows">
-                        <a href="#">linq</a>
-                        <span class="dot-icon">●</span>
-                        <div class="top-data">
-                            <span id="h1">36,872</span>
-                            <span id="h2">score</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">2,992</span>
-                            <span id="h2">posts</span> 
-                        </div>
-                        <div class="top-data">
-                            <span id="h1">8</span>
-                            <span id="h2">posts %</span> 
-                        </div>
-                    </div>
-                    <div class="tag-rows">
-                            <a href="#">string</a>
-                            <span class="dot-icon">●</span>
-                            <div class="top-data">
-                                <span id="h1">23,879</span>
-                                <span id="h2">score</span> 
-                            </div>
-                            <div class="top-data">
-                                <span id="h1">1,007</span>
-                                <span id="h2">posts</span> 
-                            </div>
-                            <div class="top-data">
-                                <span id="h1">3</span>
-                                <span id="h2">posts %</span> 
-                            </div>
+                     </div>
+                     <!--cc end-->
+                  </div>
+                  <div class="tag-bar">
+                     <div class="tag-title">
+                        <span>Top tags</span>
+                        <a href="#">View all tags</a>
+                     </div>
+                     <div class="table-bars">
+                        <div class="tag-rows">
+                           <div class="top-data">
+                              <a href="#">c#</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">254,931</span>
+                              <span id="h2">score</span>
+                              <span id="h1">19,804</span>
+                              <span id="h2">posts</span> 
+                              <span id="h1">56</span>
+                              <span id="h2">posts %</span> 
+                           </div>
                         </div>
                         <div class="tag-rows">
-                                <a href="#">generics</a>
-                                <span class="dot-icon">●</span>
-                            <div class="top-data">
-                                <span id="h1">21,438</span>
-                                <span id="h2">score</span> 
-                            </div>
-                            <div class="top-data">
-                                <span id="h1">1,282</span>
-                                <span id="h2">posts</span> 
-                            </div>
-                            <div class="top-data">
-                                <span id="h1">4</span>
-                                <span id="h2">posts %</span> 
-                            </div>
+                           <div class="top-data">
+                              <a href="#">java</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">153,792</span>
+                              <span id="h2">score</span>
+                              <span id="h1">10,565</span>
+                              <span id="h2">posts</span> 
+                              <span id="h1">30</span>
+                              <span id="h2">posts %</span> 
+                           </div>
                         </div>
-                </div>
+                        <div class="tag-rows">
+                           <div class="top-data">
+                              <a href="#">.net</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">88,372</span>
+                              <span id="h2">score</span>
+                              <span id="h1">5,606</span>
+                              <span id="h2">posts</span>
+                              <span id="h1">16</span>
+                              <span id="h2">posts %</span> 
+                           </div>
+                        </div>
+                        <div class="tag-rows">
+                           <div class="top-data">
+                              <a href="#">linq</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">36,872</span>
+                              <span id="h2">score</span>
+                              <span id="h1">2,992</span>
+                              <span id="h2">posts</span>
+                              <span id="h1">8</span>
+                              <span id="h2">posts %</span> 
+                           </div>
+                        </div>
+                        <div class="tag-rows">
+                           <div class="top-data">
+                              <a href="#">string</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">23,879</span>
+                              <span id="h2">score</span>
+                              <span id="h1">1,007</span>
+                              <span id="h2">posts</span> 
+                              <span id="h1">3</span>
+                              <span id="h2">posts %</span> 
+                           </div>
+                        </div>
+                        <div class="tag-rows">
+                           <div class="top-data">
+                              <a href="#">generics</a>
+                              <span class="dot-icon">●</span>
+                           </div>
+                           <div class="top-data">
+                              <span id="h1">21,438</span>
+                              <span id="h2">score</span>
+                              <span id="h1">1,282</span>
+                              <span id="h2">posts</span> 
+                              <span id="h1">4</span>
+                              <span id="h2">posts %</span> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="post-bar">
+                     <div class="post-title d-block d-sm-block d-md-flex justify-content-between">
+                        <div class="post-left">
+                           <span id="title-head">Top posts</span>
+                           <div>View all <a href="#">questions, answers</a>, and <a href="">articles</a> </div>
+                        </div>
+                        <div class="post-right">
+                           <div class="box1">
+                              <a id="bg-gray" href="#">All</a>
+                              <a href="#">Questions</a>
+                              <a href="">Answers</a>
+                              <a href="">Articles</a>
+                           </div>
+                           <div class="box2">
+                              <a id="bg-gray" href="">Score</a>
+                              <a href="">Newset</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="post-content">
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>11622</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">Why is subtracting these two times (in 1927) giving a strange result?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Jul 27, 2011</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>4621</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">Why is char[] preferred over String for passwords?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Jan 16, 2012</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-gray.jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span id="gray-icon">3117</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">What is the difference between String and string in C#?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Oct 18, 2008</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>3279</span>
+                              </div>
+                              <div class="pr-left">   
+                                 <a href="#">How do I call one constructor from another in Java?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Nov 12, 2008</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>3097</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">What are the correct version numbers for C#?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Oct 29, 2008</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-q-green.jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>2789</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">What are the correct version numbers for C#?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Oct 29, 2008</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>2644</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">How do I break out of nested loops in Java? </a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span> May 20, 2009</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>2496</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">What is a serialVersionUID and why should I use it?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Nov 12, 2008</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>2482</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">Difference between decimal, float and double in .NET?</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Mar 6, 2009</span>
+                           </div>
+                        </div>
+                        <div class="post-row d-flex justify-content-between p-2">
+                           <div class="d-flex">
+                              <div class="pr-left">
+                                 <img src="images/icon-A-green (1).jpeg" alt="">
+                              </div>
+                              <div class="pr-left">
+                                 <span>1961</span>
+                              </div>
+                              <div class="pr-left">
+                                 <a href="#">Group by in LINQ</a>
+                              </div>
+                           </div>
+                           <div class="pr-right">
+                              <span>Sep 6, 2011</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="meta-post-bar">
+                     <div class="meta-title  d-flex justify-content-between">
+                        <span>Top Meta posts</span>
+                        <div class="meta-title-right">
+                           <img src="images/icon-q-gray.jpeg" alt="">
+                           <span>3</span>
+                           <img src="images/icon-A-gray.jpeg" alt="">
+                           <span>22</span>
+                        </div>
+                     </div>
+                     <div class="meta-content">
+                        <div class="post-row">
+                           <div class="meta-left p-2">
+                              <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
+                              <span>923</span>
+                              <a href="#">Congratulations for reaching a million, Gordon Linoff!</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="meta-content">
+                        <div class="post-row">
+                           <div class="meta-left p-2">
+                              <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
+                              <span>803</span>
+                              <a href="#">Stack Overflow question checklist</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="meta-content">
+                        <div class="post-row">
+                           <div class="meta-left p-2">
+                              <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
+                              <span>461</span>
+                              <a href="#">Are we being "elitist"? Is there something wrong with that?</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="meta-content">
+                        <div class="post-row">
+                           <div class="meta-left p-2">
+                              <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
+                              <span>204</span>
+                              <a href="#">What should I do about a user that I'm trying to help and is calling me stupid</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="meta-content">
+                        <div class="post-row">
+                           <div class="meta-left p-2">
+                              <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
+                              <span>166</span>
+                              <a href="#">Who's the person with more answers than Jon Skeet? When will they catch him in rep terms?</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="network-post">
+                     <div class="network-title">
+                        <div class="net-left">
+                           <span>Top network posts</span>
+                        </div>
+                        <div class="net-right">
+                           <a href="#">View all network posts</a>
+                        </div>
+                     </div>
+                     <div class="network-content">
+                        <div class="network-row">
+                           <div class="network-left">
+                              <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
+                              <span>865</span>
+                              <a href="#">Allow an edit to notify downvoters: "I think I've fixed the issue now - please check"</a>
+                           </div>
+                        </div>
+                        <div class="network-row">
+                           <div class="network-left">
+                              <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
+                              <span>821</span>
+                              <a href="#">Jon Skeet Facts</a>
+                           </div>
+                        </div>
+                        <div class="network-row">
+                           <div class="network-left">
+                              <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
+                              <span>297</span>
+                              <a href="#">Should 'Hi', 'thanks', taglines, and salutations be removed from posts?</a>
+                           </div>
+                        </div>
+                        <div class="network-row">
+                           <div class="network-left">
+                              <img id="network-image" src="images/icons8-server-fault.png" alt="">
+                              <span>261</span>
+                              <a href="#">Shell command to monitor changes in a file</a>
+                           </div>
+                        </div>
+                        <div class="network-row">
+                           <div class="network-left">
+                              <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
+                              <span>181</span>
+                              <a href="#">Please show us when we lose an accepted answer</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="post-bar">
-                <div class="post-title">
-                    <div class="post-left">
-                        <span id="title-head">Top posts</span>
-                        <div>View all <a href="#">questions, answers</a>, and <a href="">articles</a> </div>
-                    </div>
-                    <div class="post-right">
-                        <div class="box1">
-                            <a id="bg-gray" href="#">All</a>
-                            <a href="#">Questions</a>
-                            <a href="">Answers</a>
-                            <a href="">Articles</a>
-                        </div>
-                        <div class="box2">
-                            <a id="bg-gray" href="">Score</a>
-                            <a href="">Newset</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post-content">
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>11622</span>
-                            <a href="#">Why is subtracting these two times (in 1927) giving a strange result?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Jul 27, 2011</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>4621</span>
-                            <a href="#">Why is char[] preferred over String for passwords?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Jan 16, 2012</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-gray.jpeg" alt="">
-                            <span id="gray-icon">3117</span>
-                            <a href="#">What is the difference between String and string in C#?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Oct 18, 2008</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>3279</span>
-                            <a href="#">How do I call one constructor from another in Java?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Nov 12, 2008</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>3097</span>
-                            <a href="#">What are the correct version numbers for C#?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Oct 29, 2008</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-q-green.jpeg" alt="">
-                            <span>2789</span>
-                            <a href="#">What are the correct version numbers for C#?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Oct 29, 2008</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>2644</span>
-                            <a href="#">How do I break out of nested loops in Java? </a>
-                        </div>
-                        <div class="pr-right">
-                            <span> May 20, 2009</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>2496</span>
-                            <a href="#">What is a serialVersionUID and why should I use it?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Nov 12, 2008</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>2482</span>
-                            <a href="#">Difference between decimal, float and double in .NET?</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Mar 6, 2009</span>
-                        </div>
-                    </div>
-                    <div class="post-row">
-                        <div class="pr-left">
-                            <img src="images/icon-A-green (1).jpeg" alt="">
-                            <span>1961</span>
-                            <a href="#">Group by in LINQ</a>
-                        </div>
-                        <div class="pr-right">
-                            <span>Sep 6, 2011</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="meta-post-bar">
-                <div class="meta-title">
-                    <span>Top Meta posts</span>
-                    <div class="meta-title-right">
-                        <img src="images/icon-q-gray.jpeg" alt="">
-                        <span>3</span>
-                        <img src="images/icon-A-gray.jpeg" alt="">
-                        <span>22</span>
-                    </div>
-                </div>
-                <div class="meta-content">
-                    <div class="post-row">
-                        <div class="meta-left">
-                            <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
-                            <span>923</span>
-                            <a href="#">Congratulations for reaching a million, Gordon Linoff!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="meta-content">
-                    <div class="post-row">
-                        <div class="meta-left">
-                            <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
-                            <span>803</span>
-                            <a href="#">Stack Overflow question checklist</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="meta-content">
-                    <div class="post-row">
-                        <div class="meta-left">
-                            <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
-                            <span>461</span>
-                            <a href="#">Are we being "elitist"? Is there something wrong with that?</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="meta-content">
-                    <div class="post-row">
-                        <div class="meta-left">
-                            <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
-                            <span>204</span>
-                            <a href="#">What should I do about a user that I'm trying to help and is calling me stupid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="meta-content">
-                    <div class="post-row">
-                        <div class="meta-left">
-                            <img id="meta-image" src="images/stack-overflow-white-icon.png" alt="">
-                            <span>166</span>
-                            <a href="#">Who's the person with more answers than Jon Skeet? When will they catch him in rep terms?</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="network-post">
-                <div class="network-title">
-                    <div class="net-left">
-                        <span>Top network posts</span>
-                    </div>
-                    <div class="net-right">
-                        <a href="#">View all network posts</a>
-                    </div>
-                </div>
-                <div class="network-content">
-                    <div class="network-row">
-                        <div class="network-left">
-                            <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
-                            <span>865</span>
-                            <a href="#">Allow an edit to notify downvoters: "I think I've fixed the issue now - please check"</a>
-                        </div>
-                    </div>
-                    <div class="network-row">
-                        <div class="network-left">
-                            <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
-                            <span>821</span>
-                            <a href="#">Jon Skeet Facts</a>
-                        </div>
-                    </div>
-                    <div class="network-row">
-                        <div class="network-left">
-                            <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
-                            <span>297</span>
-                            <a href="#">Should 'Hi', 'thanks', taglines, and salutations be removed from posts?</a>
-                        </div>
-                    </div>
-                    <div class="network-row">
-                        <div class="network-left">
-                            <img id="network-image" src="images/icons8-server-fault.png" alt="">
-                            <span>261</span>
-                            <a href="#">Shell command to monitor changes in a file</a>
-                        </div>
-                    </div>
-                    <div class="network-row">
-                        <div class="network-left">
-                            <img id="network-image" src="images/blue-chat-icon.jpeg" alt="">
-                            <span>181</span>
-                            <a href="#">Please show us when we lose an accepted answer</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+         </div>
       </div>
-    </div>
-</body>
+      <div id="footer-content">
+         <div class="footer-bar">
+            <div class="cl-1 col-2 ps-4">
+               <img src="images/footerstack.jpg" alt="">
+            </div>
+            <div class="cl-2 col-2">
+               <li class="main-f"><a href="#">STACK OVERFLOW</a></li>
+               <li class="ro"><a href="#">Questions</a></li>
+               <li class="ro"><a href="#">Help</a></li>
+            </div>
+            <div class="cl-3 col-2">
+               <li class="main-f"><a href="#">PRODUCTS</a></li>
+               <li class="ro"><a href="#">Teams</a></li>
+               <li class="ro"><a href="#">Advertising</a></li>
+               <li class="ro"><a href="#">Collectives</a></li>
+               <li class="ro"><a href="#">Talent</a></li>
+            </div>
+            <div class="cl-4 col-2">
+               <li class="main-f"><a href="#">COMPANY</a></li>
+               <li class="ro"><a href="#">About</a></li>
+               <li class="ro"><a href="#">Press</a></li>
+               <li class="ro"><a href="#">Work Here</a></li>
+               <li class="ro"><a href="#">Legal</a></li>
+               <li class="ro"><a href="#">Privacy Policy</a> </li>
+               <li class="ro"><a href="#">Terms of Service</a></li>
+               <li class="ro"><a href="#">Contact Us</a></li>
+               <li class="ro"><a href="#">Cookie Settings</a></li>
+               <li class="ro"><a href="#">Cookie Policy</a></li>
+            </div>
+            <div class="cl-5 col-2">
+               <li class="main-f"><a href="#">STACK EXCHANGE NETWORK</a></li>
+               <li class="ro"><a href="#">Technology</a></li>
+               <li class="ro"><a href="#">Culture & recreation</a></li>
+               <li class="ro"><a href="#">Life & arts</a></li>
+               <li class="ro"><a href="#">Science</a></li>
+               <li class="ro"><a href="#">Professional</a></li>
+               <li class="ro"><a href="#">Business</a></li>
+               <li class="ro"><a href="#"></a></li>
+               <li class="ro"><a href="#">API</a></li>
+               <li class="ro"><a href="#">Data</a></li>
+            </div>
+            <div class="cl-6 col-3">
+               <li>
+                  <a href="#">Blog</a>
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
+                  <a href="#">LinkedIn</a>
+                  <a href="#">Instagram</a>
+               </li>
+               <div class="credit">
+                  <li>
+                     <p>Site design / logo © 2022 Stack Exchange Inc; user contributions</p>
+                     <p>licensed under cc by-sa. rev 2022.7.15.42606</p>
+                  </li>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
