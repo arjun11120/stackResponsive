@@ -764,7 +764,7 @@ footer {
 	color: #717072;
 }
 
-.footer-bar .main-f a {
+.footer-content .main-f a {
 	font-size: 12px;
 	font-weight: 700;
 	color: #bdbdbd;
@@ -880,141 +880,7 @@ footer {
 .credit {
 	padding-top: 250px;
 }
-
-/* footer */
-/*
-#footer-content{
-    background-color:#242729;
-    color: #c4c3d1; 
-    display: flex;
-    font-family:Georgia, 'Times New Roman', Times, serif; 
-    padding: 0px 84px 10px 0px;
-}
-footer{
-    padding: 10px;
-}
-.footer-bar{
-    padding: 13px;
-   display: flex;
-}
-.footer-bar img{
-    width: 55px;
-}
-.cl-1{
-    padding: 0px 8px 0px 35px;
-}
-.cl-1 li{
-    list-style-type: none;
-    line-height: 30px;
-}
-.ro{
-    font-size: 12px;
-    color: #8a898f;
-}
-.cl-1 a{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 13px;
-    padding-left: 10px;
-}
-.cl-1 a:hover{
-    color:#717072 ;
-}
-.footer-bar .main-f a{
-   font-size: 12px;
-   font-weight: 700;
-   color:#bdbdbd;
-}
-.cl-2 a{
-    text-decoration: none;
- color: #8a898f;
- font-size: 13px;
- padding-left: 10px;
-}
-.cl-2 a:hover{
-     color:#717072 ;
-}
-.cl-2{
-    padding-top: 10px;
-}
-.cl-2 li{
-    list-style-type: none;
-    line-height: 30px;
-}
-.cl-3 a{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 13px;
-    padding-left: 10px;
-}
-.cl-3{
-    padding-top: 10px;
-    padding-left: 80px;
-}
-.cl-3 li{
-    list-style-type: none;
-    line-height: 30px;
-}
-.cl-3 a:hover{
-    color:#717072 ;
-}
-.cl-4 a{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 13px;
-    padding-left: 10px;
-}
-.cl-4{
-    padding-top: 10px;
-    padding-left: 80px;
-}
-.cl-4 li{
-    list-style-type: none;
-    line-height: 30px;
-}
-.cl-4 a:hover{
-    color:#717072 ;
-}
-.cl-5 a{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 13px;
-    padding-left: 10px;
-}
-.cl-5{
-    padding-top: 10px;
-    padding-left: 80px;
-}
-.cl-5 li{
-    list-style-type: none;
-    line-height: 30px;
-}
-.cl-5 a:hover{
-    color:#717072 ;
-}
-.cl-6 a{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 12px;
-    padding-left: 10px;
-}
-.cl-6{
-    padding-top: 10px;
-    padding-left: 110px;
-}
-.cl-6 li{
-    list-style-type: none;
-    line-height: 15px;
-}
-.cl-6 a:hover{
-    color:#717072 ;
-}
-.cl-6 p{
-    text-decoration: none;
-    color: #8a898f;
-    font-size: 12px;
-    padding-left: 10px;
-}
-.credit{
-    padding-top: 250px;
+.main-f{
+    	font-weight: 700;
+    color: #bcbbbb !important;
 }
