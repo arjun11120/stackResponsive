@@ -47,24 +47,17 @@
 nav div.b-hov:hover {
 	background-color: #d5d5d5;
 }
-
-nav div {
-	padding: 2px;
-}
-
 .dec li {
 	list-style: none;
 	font-size: 13px;
 	padding: 5px 10px;
 	color: #8F9091;
 }
-
 .side-bar {
 	position: sticky;
 	top: 20px;
 	height: 500px;
 }
-
 #icon-star {
 	width: 18px;
 }
@@ -73,18 +66,16 @@ nav div {
 	width: 18px;
 	opacity: .5;
 }
-
 #earth-icon {
 	font-size: 18px;
 	vertical-align: sub;
+	margin-right: 10px;
 }
-
 #user {
 	border-right: 3px solid #f48225;
 	font-weight: 800;
 	color: black;
 }
-
 .ms-4 {
 	margin-left: 1.9rem !important;
 }
@@ -94,7 +85,7 @@ nav div {
 }
 
 .ml20 {
-	margin-left: 20px;
+	margin-left: 13px;
 }
 
 .pro-image img {
@@ -252,19 +243,18 @@ p {
 .content-row {
 	display: flex;
 	line-height: 20px;
+	padding:10px;
 }
 
 .content-row div {
 	text-align: left;
-	padding: 8px 2px 8px 13px;
-	width: 100px;
 }
 
 .stats-content div {
 	padding: 8px 15px 8px 15px;
 }
 
-#discription {
+.discription {
 	display: block;
 	font-size: 13px;
 	color: #8d949c;
@@ -500,18 +490,17 @@ span.dot-icon-b {
 
 .top-data {
 	display: flex;
-	padding: 0px 10px;
 }
 
-#h1 {
-	margin-left: 10px;
-	font-size: 16px;
+.hd1 {
+	margin-left: 10px !important;
+	font-size: 16px !important;
 }
 
-#h2 {
-	font-size: 12px;
-	padding: 3px;
-	color: #8a898f;
+.hd2 {
+	font-size: 12px !important;
+	padding: 3px !important;
+	color: #8a898f !important;
 }
 
 .tag-rows {
@@ -582,8 +571,8 @@ span.dot-icon-b {
 	padding: 10px 0px;
 }
 
-#bg-gray {
-	background: #8d949c49;
+.bg-gray {
+	background: #8d949c49 !important;
 }
 
 #gray-icon {
@@ -668,8 +657,8 @@ span.dot-icon-b {
 	text-decoration: none;
 }
 
-.net-left {
-	display: inline-flex;
+.network-left {
+	padding: 7px;
 }
 
 .network-post {
@@ -686,10 +675,8 @@ span.dot-icon-b {
 	color: #8a898f;
 }
 
-#network-image {
-	width: 20px;
-	height: 20px;
-	padding: 10px;
+.network-image {
+	padding: 10px !important;
 }
 
 .network-left a {
@@ -706,7 +693,7 @@ span.dot-icon-b {
 	color: #505050;
 	padding: 5px;
 	border-radius: 5px;
-	margin: 10px 10px;
+	vertical-align: sub;
 	font-size: 12px;
 	border: 1px solid #00000042;
 }
@@ -715,11 +702,6 @@ span.dot-icon-b {
 	padding: 14px 10px;
 	text-decoration: none;
 }
-
-.network-left {
-	display: inline-flex;
-}
-
 .network-row {
 	border: 1px solid rgba(17, 17, 17, 0.1);
 }
@@ -883,4 +865,7 @@ footer {
 .main-f{
     	font-weight: 700;
     color: #bcbbbb !important;
+}
+.w-100{
+	width:100%;
 }
